@@ -1,0 +1,41 @@
+<div class="main-conent">
+
+  <div class="left-space">
+
+    <select [(ngModel)]="fromCurrency" class="select_left"
+     (change)="onCurrencyChange('from')">
+
+      <option value="UAH">UAH</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+
+    </select>
+
+    <input type="number"
+    [(ngModel)]="fromPrice"
+    (ngModelChange)="onChangeFromPrice($event)">
+
+  </div>
+
+  <svg height="50px" viewBox="0 0 50 50" width="50px">
+    <rect fill="none" height="50" width="50" />
+    <polygon points="47.25,15 45.164,12.914 25,33.078 4.836,12.914 2.75,15 25,37.25 " />
+  </svg>
+
+  <div class="right-space">
+    <select [(ngModel)]="toCurrency" class="select_right"
+    (change)="onCurrencyChange('to')">
+
+      <option value="UAH">UAH</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+
+    </select>
+
+    <input type="number" [(ngModel)]="toPrice"
+     (ngModelChange)="onChangeToPrice($event)">
+
+  </div>
+
+
+</div>

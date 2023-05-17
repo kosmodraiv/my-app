@@ -87,6 +87,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/animate.css/animate.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -94,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "8c57954d-0004-42ff-ba77-53f2ba1184a9"
   }
 }
